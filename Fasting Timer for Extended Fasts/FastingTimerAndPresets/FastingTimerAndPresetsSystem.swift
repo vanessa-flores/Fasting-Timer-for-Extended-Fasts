@@ -59,8 +59,8 @@ struct FastingTimerAndPresetsSystem {
                 switch childAction {
                 case .presetSelected(let fastingPreset):
                     print(fastingPreset.name)
+                    return .send(.segmentSelected(.fastingTimer))
                 }
-                return .none
             }
         }
     }

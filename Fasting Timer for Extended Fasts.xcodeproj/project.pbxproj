@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A339318E2CA9CD93005CCB6B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A339318D2CA9CD93005CCB6B /* README.md */; };
+		A33931A02CA9CF8D005CCB6B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A339319F2CA9CF8D005CCB6B /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33931A02CA9CF8D005CCB6B /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +120,7 @@
 			);
 			name = "Fasting Timer for Extended Fasts";
 			packageProductDependencies = (
+				A339319F2CA9CF8D005CCB6B /* ComposableArchitecture */,
 			);
 			productName = "Fasting Timer for Extended Fasts";
 			productReference = A33931602CA9CD7C005CCB6B /* Fasting Timer for Extended Fasts.app */;
@@ -201,6 +204,9 @@
 			);
 			mainGroup = A33931572CA9CD7C005CCB6B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A339319E2CA9CF8D005CCB6B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A33931612CA9CD7C005CCB6B /* Products */;
 			projectDirPath = "";
@@ -565,6 +571,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A339319E2CA9CF8D005CCB6B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A339319F2CA9CF8D005CCB6B /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A339319E2CA9CF8D005CCB6B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A33931582CA9CD7C005CCB6B /* Project object */;
 }

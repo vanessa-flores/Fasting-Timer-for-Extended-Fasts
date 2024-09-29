@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A339318E2CA9CD93005CCB6B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A339318D2CA9CD93005CCB6B /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A33931712CA9CD7D005CCB6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A33931582CA9CD7C005CCB6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A339315F2CA9CD7C005CCB6B;
+			remoteInfo = "Fasting Timer for Extended Fasts";
+		};
+		A339317B2CA9CD7D005CCB6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A33931582CA9CD7C005CCB6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A339315F2CA9CD7C005CCB6B;
+			remoteInfo = "Fasting Timer for Extended Fasts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A33931602CA9CD7C005CCB6B /* Fasting Timer for Extended Fasts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fasting Timer for Extended Fasts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33931702CA9CD7D005CCB6B /* Fasting Timer for Extended FastsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fasting Timer for Extended FastsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A339317A2CA9CD7D005CCB6B /* Fasting Timer for Extended FastsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fasting Timer for Extended FastsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A339318D2CA9CD93005CCB6B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A33931622CA9CD7C005CCB6B /* Fasting Timer for Extended Fasts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Fasting Timer for Extended Fasts";
+			sourceTree = "<group>";
+		};
+		A33931732CA9CD7D005CCB6B /* Fasting Timer for Extended FastsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Fasting Timer for Extended FastsTests";
+			sourceTree = "<group>";
+		};
+		A339317D2CA9CD7D005CCB6B /* Fasting Timer for Extended FastsUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Fasting Timer for Extended FastsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A339315D2CA9CD7C005CCB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A339316D2CA9CD7D005CCB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33931772CA9CD7D005CCB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A33931572CA9CD7C005CCB6B = {
+			isa = PBXGroup;
+			children = (
+				A339318D2CA9CD93005CCB6B /* README.md */,
+				A33931622CA9CD7C005CCB6B /* Fasting Timer for Extended Fasts */,
+				A33931732CA9CD7D005CCB6B /* Fasting Timer for Extended FastsTests */,
+				A339317D2CA9CD7D005CCB6B /* Fasting Timer for Extended FastsUITests */,
+				A33931612CA9CD7C005CCB6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A33931612CA9CD7C005CCB6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A33931602CA9CD7C005CCB6B /* Fasting Timer for Extended Fasts.app */,
+				A33931702CA9CD7D005CCB6B /* Fasting Timer for Extended FastsTests.xctest */,
+				A339317A2CA9CD7D005CCB6B /* Fasting Timer for Extended FastsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A339315F2CA9CD7C005CCB6B /* Fasting Timer for Extended Fasts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A33931842CA9CD7D005CCB6B /* Build configuration list for PBXNativeTarget "Fasting Timer for Extended Fasts" */;
+			buildPhases = (
+				A339315C2CA9CD7C005CCB6B /* Sources */,
+				A339315D2CA9CD7C005CCB6B /* Frameworks */,
+				A339315E2CA9CD7C005CCB6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A33931622CA9CD7C005CCB6B /* Fasting Timer for Extended Fasts */,
+			);
+			name = "Fasting Timer for Extended Fasts";
+			packageProductDependencies = (
+			);
+			productName = "Fasting Timer for Extended Fasts";
+			productReference = A33931602CA9CD7C005CCB6B /* Fasting Timer for Extended Fasts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A339316F2CA9CD7D005CCB6B /* Fasting Timer for Extended FastsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A33931872CA9CD7D005CCB6B /* Build configuration list for PBXNativeTarget "Fasting Timer for Extended FastsTests" */;
+			buildPhases = (
+				A339316C2CA9CD7D005CCB6B /* Sources */,
+				A339316D2CA9CD7D005CCB6B /* Frameworks */,
+				A339316E2CA9CD7D005CCB6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A33931722CA9CD7D005CCB6B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A33931732CA9CD7D005CCB6B /* Fasting Timer for Extended FastsTests */,
+			);
+			name = "Fasting Timer for Extended FastsTests";
+			packageProductDependencies = (
+			);
+			productName = "Fasting Timer for Extended FastsTests";
+			productReference = A33931702CA9CD7D005CCB6B /* Fasting Timer for Extended FastsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A33931792CA9CD7D005CCB6B /* Fasting Timer for Extended FastsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A339318A2CA9CD7D005CCB6B /* Build configuration list for PBXNativeTarget "Fasting Timer for Extended FastsUITests" */;
+			buildPhases = (
+				A33931762CA9CD7D005CCB6B /* Sources */,
+				A33931772CA9CD7D005CCB6B /* Frameworks */,
+				A33931782CA9CD7D005CCB6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A339317C2CA9CD7D005CCB6B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A339317D2CA9CD7D005CCB6B /* Fasting Timer for Extended FastsUITests */,
+			);
+			name = "Fasting Timer for Extended FastsUITests";
+			packageProductDependencies = (
+			);
+			productName = "Fasting Timer for Extended FastsUITests";
+			productReference = A339317A2CA9CD7D005CCB6B /* Fasting Timer for Extended FastsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A33931582CA9CD7C005CCB6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A339315F2CA9CD7C005CCB6B = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A339316F2CA9CD7D005CCB6B = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = A339315F2CA9CD7C005CCB6B;
+					};
+					A33931792CA9CD7D005CCB6B = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = A339315F2CA9CD7C005CCB6B;
+					};
+				};
+			};
+			buildConfigurationList = A339315B2CA9CD7C005CCB6B /* Build configuration list for PBXProject "Fasting Timer for Extended Fasts" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A33931572CA9CD7C005CCB6B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A33931612CA9CD7C005CCB6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A339315F2CA9CD7C005CCB6B /* Fasting Timer for Extended Fasts */,
+				A339316F2CA9CD7D005CCB6B /* Fasting Timer for Extended FastsTests */,
+				A33931792CA9CD7D005CCB6B /* Fasting Timer for Extended FastsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A339315E2CA9CD7C005CCB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A339318E2CA9CD93005CCB6B /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A339316E2CA9CD7D005CCB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33931782CA9CD7D005CCB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A339315C2CA9CD7C005CCB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A339316C2CA9CD7D005CCB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33931762CA9CD7D005CCB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A33931722CA9CD7D005CCB6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A339315F2CA9CD7C005CCB6B /* Fasting Timer for Extended Fasts */;
+			targetProxy = A33931712CA9CD7D005CCB6B /* PBXContainerItemProxy */;
+		};
+		A339317C2CA9CD7D005CCB6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A339315F2CA9CD7C005CCB6B /* Fasting Timer for Extended Fasts */;
+			targetProxy = A339317B2CA9CD7D005CCB6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A33931822CA9CD7D005CCB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A33931832CA9CD7D005CCB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A33931852CA9CD7D005CCB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fasting Timer for Extended Fasts/Preview Content\"";
+				DEVELOPMENT_TEAM = SB3MXU5AXK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risingdevhabits.Fasting-Timer-for-Extended-Fasts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A33931862CA9CD7D005CCB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fasting Timer for Extended Fasts/Preview Content\"";
+				DEVELOPMENT_TEAM = SB3MXU5AXK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risingdevhabits.Fasting-Timer-for-Extended-Fasts";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A33931882CA9CD7D005CCB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB3MXU5AXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risingdevhabits.Fasting-Timer-for-Extended-FastsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fasting Timer for Extended Fasts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fasting Timer for Extended Fasts";
+			};
+			name = Debug;
+		};
+		A33931892CA9CD7D005CCB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB3MXU5AXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risingdevhabits.Fasting-Timer-for-Extended-FastsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fasting Timer for Extended Fasts.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fasting Timer for Extended Fasts";
+			};
+			name = Release;
+		};
+		A339318B2CA9CD7D005CCB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB3MXU5AXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risingdevhabits.Fasting-Timer-for-Extended-FastsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fasting Timer for Extended Fasts";
+			};
+			name = Debug;
+		};
+		A339318C2CA9CD7D005CCB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SB3MXU5AXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.risingdevhabits.Fasting-Timer-for-Extended-FastsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fasting Timer for Extended Fasts";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A339315B2CA9CD7C005CCB6B /* Build configuration list for PBXProject "Fasting Timer for Extended Fasts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33931822CA9CD7D005CCB6B /* Debug */,
+				A33931832CA9CD7D005CCB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A33931842CA9CD7D005CCB6B /* Build configuration list for PBXNativeTarget "Fasting Timer for Extended Fasts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33931852CA9CD7D005CCB6B /* Debug */,
+				A33931862CA9CD7D005CCB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A33931872CA9CD7D005CCB6B /* Build configuration list for PBXNativeTarget "Fasting Timer for Extended FastsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33931882CA9CD7D005CCB6B /* Debug */,
+				A33931892CA9CD7D005CCB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A339318A2CA9CD7D005CCB6B /* Build configuration list for PBXNativeTarget "Fasting Timer for Extended FastsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A339318B2CA9CD7D005CCB6B /* Debug */,
+				A339318C2CA9CD7D005CCB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A33931582CA9CD7C005CCB6B /* Project object */;
+}

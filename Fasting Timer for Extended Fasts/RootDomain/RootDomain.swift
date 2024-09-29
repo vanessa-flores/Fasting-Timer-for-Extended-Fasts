@@ -14,7 +14,7 @@ struct RootDomain {
     @ObservableState
     struct State {
         var selectedTab = Tab.timerAndPresets
-        var timerAndPresetsState = FastingTimerAndPresets.State()
+        var timerAndPresetsState = FastingTimerAndPresetsSystem.State()
         var fastingLogsState = FastingLogs.State()
     }
     

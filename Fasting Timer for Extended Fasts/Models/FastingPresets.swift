@@ -48,6 +48,7 @@ public enum FastingPreset: CaseIterable, Equatable {
         }
     }
     
+    // TODO: - display benefits info for each fasting preset
     var benefits: [String] {
         switch self {
         case .intermittent:

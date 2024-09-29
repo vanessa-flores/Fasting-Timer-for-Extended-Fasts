@@ -12,8 +12,40 @@ import Foundation
 struct FastingTimerAndPresetsSystem {
     
     @ObservableState
-    struct State {
+    struct State: Equatable {
+        var selectedSegment = Segment.fastingTimer
+        var fastingTimerState = FastingTimerSystem.State()
+        var fastingPresetsState = FastingPresetsSystem.State()
     }
     
-    enum Action {}  
+    enum Segment: CaseIterable, Identifiable, Equatable {
+        case fastingTimer
+        case fastingPresets
+        
+        var title: String {
+            switch self {
+            case .fastingTimer: return "Timer"
+            case .fastingPresets: return "Presets"
+            }
+        }
+        
+        var id: Self { self }
+    }
+    
+    enum Action: Equatable {
+        case segmentSelected(Segment)
+    }
+    
+    // MARK: - Reducer
+    
+    var body: some ReducerOf<FastingTimerAndPresetsSystem> {
+        Reduce { state, action in
+            switch action {
+            case .segmentSelected(let selectedSegment):
+                state.selectedSegment = selectedSegment
+                return .none
+            }
+        }
+    }
 }
+

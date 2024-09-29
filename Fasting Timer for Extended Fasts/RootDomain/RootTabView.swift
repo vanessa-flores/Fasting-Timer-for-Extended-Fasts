@@ -13,7 +13,7 @@ struct RootTabView: View {
     
     var body: some View {
         TabView(selection: $store.selectedTab.sending(\.tabSelected)) {
-            FastingTimerAndPresetsView()
+            FastingTimerAndPresetsView(store: store.scope(state: \.timerAndPresetsState, action: \.fastingTimerAndPresets))
                 .tabItem {
                     Label("Timer", systemImage: "timer")
                 }

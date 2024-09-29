@@ -34,15 +34,32 @@ struct FastingTimerAndPresetsSystem {
     
     enum Action: Equatable {
         case segmentSelected(Segment)
+        case fastingTimerAction(FastingTimerSystem.Action)
+        case fastingPresetsAction(FastingPresetsSystem.Action)
     }
     
     // MARK: - Reducer
     
     var body: some ReducerOf<FastingTimerAndPresetsSystem> {
+        Scope(state: \.fastingTimerState, action: \.fastingTimerAction) {
+            FastingTimerSystem()
+        }
+        Scope(state: \.fastingPresetsState, action: \.fastingPresetsAction) {
+            FastingPresetsSystem()
+        }
+        
         Reduce { state, action in
             switch action {
             case .segmentSelected(let selectedSegment):
                 state.selectedSegment = selectedSegment
+                return .none
+            case .fastingTimerAction: return .none
+            case .fastingPresetsAction(let action):
+                guard case .delegate(let childAction) = action else { return .none }
+                switch childAction {
+                case .presetSelected(let fastingPreset):
+                    print(fastingPreset.name)
+                }
                 return .none
             }
         }

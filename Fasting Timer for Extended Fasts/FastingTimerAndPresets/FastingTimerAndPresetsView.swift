@@ -28,14 +28,14 @@ struct FastingTimerAndPresetsView: View {
                     case .fastingTimer:
                         FastingTimerContainerView()
                     case .fastingPresets:
-                        FastingPresetsContainerView()
+                        FastingPresetsContainerView(store: store.scope(state: \.fastingPresetsState, action: \.fastingPresetsAction))
                     }
                     
                     Spacer()
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-                        .navigationTitle("Fasting")
+            .navigationTitle(store.selectedSegment == .fastingTimer ? "Fasting" : "Fasting Goals")
         }
     }
 }

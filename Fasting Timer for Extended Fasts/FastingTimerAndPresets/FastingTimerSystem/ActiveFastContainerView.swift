@@ -32,10 +32,12 @@ struct ActiveFastContainerView: View {
                             .frame(maxWidth: .infinity)
                         
                         // MARK: - Start Button
-                        Button("End Fast", action: {})
-                            .buttonStyle(.borderedProminent)
-                            .controlSize(.large)
-                            .padding(.top)
+                        Button("End Fast", action: {
+                            store.send(.viewAction(.startEndFastButtonTapped))
+                        })
+                        .buttonStyle(.borderedProminent)
+                        .controlSize(.large)
+                        .padding(.top)
                         
                         HStack(spacing: 20) {
                             // MARK: - Start Time

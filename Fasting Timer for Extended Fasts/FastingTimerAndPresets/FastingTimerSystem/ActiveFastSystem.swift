@@ -27,7 +27,9 @@ struct ActiveFastSystem {
         case endButtonAction(EditTimeButtonSystem.Action)
         
         @CasePathable
-        enum ViewAction: Equatable {}
+        enum ViewAction: Equatable {
+            case startEndFastButtonTapped
+        }
     }
     
     // MARK: - Reducer
@@ -65,7 +67,10 @@ struct ActiveFastSystem {
     // MARK: - Private
     
     private func handleViewAction(state: inout State, action: Action.ViewAction) -> Effect<Action> {
-        switch action {}
-        return .none
+        switch action {
+        case .startEndFastButtonTapped:
+            print("start or end fast")
+            return .none
+        }
     }
 }

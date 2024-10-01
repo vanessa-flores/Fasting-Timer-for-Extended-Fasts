@@ -19,7 +19,7 @@ struct RootTabView: View {
                 }
                 .tag(RootDomain.Tab.timerAndPresets)
             
-            FastingLogsView()
+            FastingLogsView(store: store.scope(state: \.fastingLogsState, action: \.fastingLogs))
                 .tabItem {
                     Label("History", systemImage: "list.clipboard")
                 }

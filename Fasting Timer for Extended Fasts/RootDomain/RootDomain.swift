@@ -15,7 +15,7 @@ struct RootDomain {
     struct State: Equatable {
         var selectedTab = Tab.timerAndPresets
         var timerAndPresetsState = FastingTimerAndPresetsSystem.State()
-        var fastingLogsState = FastingLogs.State()
+        var fastingLogsState = FastingLogsSystem.State()
     }
     
     enum Tab: Equatable {
@@ -26,7 +26,7 @@ struct RootDomain {
     enum Action: Equatable {
         case tabSelected(Tab)
         case fastingTimerAndPresets(FastingTimerAndPresetsSystem.Action)
-        case fastingLogs(FastingLogs.Action)
+        case fastingLogs(FastingLogsSystem.Action)
     }
     
     // MARK: - Reducer
@@ -36,7 +36,7 @@ struct RootDomain {
             FastingTimerAndPresetsSystem()
         }
         Scope(state: \.fastingLogsState, action: \.fastingLogs) {
-            FastingLogs()
+            FastingLogsSystem()
         }
         
         Reduce { state, action in
@@ -45,6 +45,8 @@ struct RootDomain {
                 state.selectedTab = selectedTab
                 return .none
             case .fastingTimerAndPresets:
+                return .none
+            case .fastingLogs:
                 return .none
             }
         }

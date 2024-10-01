@@ -38,7 +38,7 @@ struct ProgressRingView: View {
             }
         }
         .frame(width: 250, height: 250)
-        .padding()
+        .padding([.top, .bottom], 10)
         .onAppear {
             progress = 1.0
         }

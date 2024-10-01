@@ -13,18 +13,18 @@ struct FastingTimerAndPresetsSystem {
     
     @ObservableState
     struct State: Equatable {
-        var selectedSegment = Segment.fastingTimer
-        var fastingTimerState = FastingTimerSystem.State()
+        var selectedSegment = Segment.activeFast
+        var activeFastState = ActiveFastSystem.State()
         var fastingPresetsState = FastingPresetsSystem.State()
     }
     
     enum Segment: CaseIterable, Identifiable, Equatable {
-        case fastingTimer
+        case activeFast
         case fastingPresets
         
         var title: String {
             switch self {
-            case .fastingTimer: return "Timer"
+            case .activeFast: return "Active Fast"
             case .fastingPresets: return "Presets"
             }
         }
@@ -34,15 +34,15 @@ struct FastingTimerAndPresetsSystem {
     
     enum Action: Equatable {
         case segmentSelected(Segment)
-        case fastingTimerAction(FastingTimerSystem.Action)
+        case activeFastAction(ActiveFastSystem.Action)
         case fastingPresetsAction(FastingPresetsSystem.Action)
     }
     
     // MARK: - Reducer
     
     var body: some ReducerOf<FastingTimerAndPresetsSystem> {
-        Scope(state: \.fastingTimerState, action: \.fastingTimerAction) {
-            FastingTimerSystem()
+        Scope(state: \.activeFastState, action: \.activeFastAction) {
+            ActiveFastSystem()
         }
         Scope(state: \.fastingPresetsState, action: \.fastingPresetsAction) {
             FastingPresetsSystem()
@@ -53,13 +53,13 @@ struct FastingTimerAndPresetsSystem {
             case .segmentSelected(let selectedSegment):
                 state.selectedSegment = selectedSegment
                 return .none
-            case .fastingTimerAction: return .none
+            case .activeFastAction: return .none
             case .fastingPresetsAction(let action):
                 guard case .delegate(let childAction) = action else { return .none }
                 switch childAction {
                 case .presetSelected(let fastingPreset):
                     print(fastingPreset.name)
-                    return .send(.segmentSelected(.fastingTimer))
+                    return .send(.segmentSelected(.activeFast))
                 }
             }
         }

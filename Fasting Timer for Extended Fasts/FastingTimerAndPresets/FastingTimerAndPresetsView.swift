@@ -25,8 +25,8 @@ struct FastingTimerAndPresetsView: View {
                     .padding()
                     
                     switch store.selectedSegment {
-                    case .fastingTimer:
-                        FastingTimerContainerView()
+                    case .activeFast:
+                        ActiveFastContainerView(store: store.scope(state: \.activeFastState, action: \.activeFastAction))
                     case .fastingPresets:
                         FastingPresetsContainerView(store: store.scope(state: \.fastingPresetsState, action: \.fastingPresetsAction))
                     }
@@ -35,7 +35,7 @@ struct FastingTimerAndPresetsView: View {
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-            .navigationTitle(store.selectedSegment == .fastingTimer ? "Fasting" : "Fasting Goals")
+            .navigationTitle(store.selectedSegment == .activeFast ? "Fasting" : "Fasting Goals")
         }
     }
 }

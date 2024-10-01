@@ -22,6 +22,9 @@ struct EditTimeButton: View {
         .padding(20)
         .background(.gray.opacity(0.1))
         .cornerRadius(10)
+        .onTapGesture {
+            store.send(.viewAction(.editTimeButtonTapped))
+        }
     }
 }
 

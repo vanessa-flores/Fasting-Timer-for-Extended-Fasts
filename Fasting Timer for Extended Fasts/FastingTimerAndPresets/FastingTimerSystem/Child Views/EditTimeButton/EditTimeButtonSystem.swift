@@ -23,9 +23,16 @@ struct EditTimeButtonSystem {
     
     enum Action: Equatable {
         case viewAction(ViewAction)
+        case delegateAction(DelegateAction)
         
+        @CasePathable
         enum ViewAction: Equatable {
             case editTimeButtonTapped
+        }
+        
+        @CasePathable
+        enum DelegateAction: Equatable {
+            case dateTimeUpdated(Date)
         }
     }
     
@@ -35,6 +42,8 @@ struct EditTimeButtonSystem {
         switch action {
         case .viewAction(let viewAction):
             return handleViewAction(state: &state, action: viewAction)
+        case .delegateAction:
+            return .none
         }
     }
     
@@ -44,7 +53,7 @@ struct EditTimeButtonSystem {
         switch action {
         case .editTimeButtonTapped:
             print("show date and time picker")
+            return .send(.delegateAction(.dateTimeUpdated(Date().addingTimeInterval(10))))
         }
-        return .none
     }
 }

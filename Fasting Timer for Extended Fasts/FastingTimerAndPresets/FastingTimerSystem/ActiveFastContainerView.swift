@@ -31,38 +31,20 @@ struct ActiveFastContainerView: View {
                         ProgressRingView()
                             .frame(maxWidth: .infinity)
                         
-                        HStack(spacing: 20) {
-                            // MARK: - Start Time
-                            VStack(spacing: 8) {
-                                Text("Start")
-                                    .foregroundStyle(.secondary)
-                                
-                                Text(Date(), format: .dateTime.weekday().hour().minute().second())
-                                    .fontWeight(.medium)
-                            }
-                            .padding(20)
-                            .background(.gray.opacity(0.2))
-                            .cornerRadius(10)
-                            
-                            // MARK: - End Time
-                            VStack(spacing: 8) {
-                                Text("End")
-                                    .foregroundStyle(.secondary)
-                                
-                                Text(Date().addingTimeInterval(60), format: .dateTime.weekday().hour().minute().second())
-                                    .fontWeight(.medium)
-                            }
-                            .padding(20)
-                            .background(.gray.opacity(0.2))
-                            .cornerRadius(10)
-                        }
-                        .padding(.vertical)
-                        
                         // MARK: - Start Button
                         Button("End Fast", action: {})
                             .buttonStyle(.borderedProminent)
                             .controlSize(.large)
                             .padding(.top)
+                        
+                        HStack(spacing: 20) {
+                            // MARK: - Start Time
+                            EditTimeButton(store: store.scope(state: \.startButtonState, action: \.startButtonAction))
+                            
+                            // MARK: - End Time
+                            EditTimeButton(store: store.scope(state: \.endButtonState, action: \.endButtonAction))
+                        }
+                        .padding(.vertical)
 
                     }
                     .padding()
